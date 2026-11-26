@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('@/assets/Geist-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #744253;
+  --color-accent: #e06349;
+  --color-success: #4caf50;
+
+  --color-background: #eeeeee;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #000000;
+  --color-text-secondary: #744253;
+
+  --color-border: #e8d3bd;
+}
+
+[data-theme='dark'] {
+  --color-primary: #96627c;
+  --color-accent: #e8755c;
+  --color-success: #66bb6a;
+
+  --color-background: #060d08;
+  --color-surface: #0e120e;
+  /* --color-surface: #141714; */
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #808080;
+
+  --color-border: #212521;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  /* background: var(--color-background); */
+  background: radial-gradient(70.02% 70.02% at 50% 87.31%, #e1d2cf 0%, #eeeeee 100%);
+  color: var(--color-text-primary);
+  font-family: 'Geist', system-ui, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
